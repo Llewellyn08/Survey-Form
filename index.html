@@ -1,0 +1,212 @@
+ <!-- Thanks to IBcoder for helping me in completing this project and also helping me learn a lot of concepts. Video: https://www.youtube.com/watch?v=p4LypMpJQzs&t=1354s -->
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./survey-form.css">
+  <title>Survey Form</title>
+ </head>
+
+ <!-- Header Elements -->
+ <div class="container">
+ <header class="text-center">
+  <h1 id="title">freecodecamp Survey Form</h1>
+  <p id="description" class="description">
+    <em>Thank you for taking the time to rate our platform.</em>
+   </p>
+ </header>
+
+ <body>
+
+  <!-- Form Elements -->
+ <form action="#" id="survey-form" class="form-label">
+  <div class="form-group">
+   <label for="name" id="name-label">Name</label>
+   <input 
+    type="text" 
+    id="name" 
+    name="name" 
+    placeholder="Enter your name" 
+    class="form-control" 
+    required>
+   <br>
+ </div>
+
+  
+  <div class="form-group">
+   <label for="email" id="email-label">Email</label>
+    <input 
+     type="email" 
+     id="email" 
+     name="email" 
+     placeholder="Enter your email ID" 
+     class="form-control" 
+     required>
+   <br>
+ </div>
+
+  <div class="form-group">
+    <label for="number" id="number-label">Age</label>
+    <input 
+    type="number" 
+    id="number" 
+    name="age" 
+    placeholder="Age" 
+    class="form-control"
+    min="10"
+    max="99">
+    <br>
+  </div>
+
+  <div class="form-group">
+    <label for="dropdown">
+      Which option best describes your current role
+    </label>
+    <select name="dropdown" id="dropdown" class="form-control">
+      <option disabled>Select your current role</option>
+      <option value="Student">Student</option>
+      <option value="Full Time Job">Full Time Job</option>
+      <option value="Full Time Learner">Full Time Learner</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+    </select>
+  </div>
+
+<div class="form-group">
+  <p>Would you recommend freecodecamp to a friend?</p>
+  <p>
+    <label>
+      <input type="radio" name="answer" id="definitely" value="Definitely" checked>
+      Definitely
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <input type="radio" name="answer" id="maybe" value="Maybe">
+      Maybe
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <input type="radio" name="answer" id="notsure" value="Not Sure">
+      Not sure
+    </label>
+  </p>
+</div>
+
+<div class="form-group">
+  <label for="favourite">
+    What is your favourite feature of freecodecamp
+  </label>
+  <select name="favourite" id="favourite" class="form-control" required>
+    <option disabled>Select an option</option>
+    <option value="Challenges">Challenges</option>
+    <option value="Community">Community</option>
+    <option value="Open-Source">Open-Source</option>
+    <option value="Projects">Projects</option>
+    <option value="Others">Others</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <p>What would you like improved? (Check all that apply)</p>
+  <p>
+    <label>
+      <input type="checkbox" 
+      name="checkbox" 
+      value="Front-end Projects">
+      Front-end Projects
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <input type="checkbox" name="checkbox" value="Back-end Projects">
+      Back-end Projects
+    </label>
+  </p>
+
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="Data visualisation">
+        Data visualisation
+      </label>
+    </p>
+
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="Challenges">
+        Challenges
+      </label>
+    </p>
+
+    
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="Data visualisation">
+        Data visualisation
+      </label>
+
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="Open Source Community">
+        Open Source Community
+      </label>
+
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="Gitter help rooms">
+        Gitter help rooms
+      </label>
+
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="Videos">
+        Videos
+      </label>
+
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="City Meetups">
+        City Meetups
+      </label>
+
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="Wiki">
+        Wiki
+      </label>
+
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="Forum">
+        Forum
+      </label>
+
+    <p>
+      <label>
+        <input type="checkbox" name="checkbox" value="Additional Courses">
+        Additional Courses
+      </label>
+  </div>
+
+  <div class="form-group">
+    <p>Any comments or suggestions</p>
+    <textarea name="comment" id="comment" cols="50" rows="6" required placeholder="Enter your comment here..."></textarea>
+  </div>
+
+
+  <div class="form-group">
+ <button id="submit" class="submit-button">Submit</button>
+  </div>
+ </form> 
+</div>
+ </body>
+ </html>
